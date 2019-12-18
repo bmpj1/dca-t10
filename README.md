@@ -6,6 +6,11 @@ El bug consiste en calcular el modulo '((l+m)%M) para poder simular el comportam
 
 Como usar bisect:
 	https://apiumhub.com/es/tech-blog-barcelona/git-bisect/
+
 Pintar la gráfica de commits y comprobar en cual estoy:
 	git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
+
+Usar git hooks de serie:
+	1.  Quítales el sufijo .sample
+	2.  Dales permiso de ejecución si no lo tienen
