@@ -80,24 +80,6 @@ void printMatrix(const short* grid, const int M) {
 	}
 }
 
-/* Copia todas las matrices */
-void copyMatrix(short* past, const short* future, int M){
-	size_t pos;
-	size_t numElem = M * M * NUM_REGLAS;
-	for (int pos = 0; pos < numElem; pos++){
-		past[pos] = future[pos]; // Regla K, Posici�n [i][j] ... 
-	}
-	/*
-	for (int i = 0; i < M; i++){
-		for (int j = 0; j < M; j++){ // Hacemos una copia de la matriz inicial por cada regla que tengamos
-			pos = (size_t)((i * M * NUM_REGLAS) + (j * NUM_REGLAS)); // [i][j]
-			for (int k = 0; k < NUM_REGLAS; k++) {
-				past[pos + k] = future[pos + k]; // Regla K, Posici�n [i][j] ...
-			}
-		}
-	}*/
-}
-
 /* Devuelve el módulo con su valor absoluto */
 unsigned int mod(long a, long b) { return ((a%b) + b) % b; }
 
